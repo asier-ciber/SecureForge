@@ -17,3 +17,12 @@ Herramienta profesional para protección avanzada de archivos y directorios con 
 ### Requisitos (Debian/Ubuntu):
 ```bash
 sudo apt install dialog openssl gnupg auditd
+
+### Clonar repositorio:
+
+```bash
+git clone https://github.com/tuusuario/SecureForge.git
+cd SecureForge
+
+### Ejecutar:
+sudo ./src/SecureShield.sh [archivo|directorio]
