@@ -40,6 +40,8 @@ ejecutar:
 sudo bash ./cybershield.sh confidencial.txt      
 
 ```
+![cap2](https://github.com/user-attachments/assets/13b8faec-5d8e-4203-b9a0-2373bb6c0146)
+
 ## ⚒️ cambiar permisos y dar seguridad
 
 ![Captura de pantalla_20250225_204442](https://github.com/user-attachments/assets/d84fdfb6-d93f-4ab7-bd19-d867fa09593f)
