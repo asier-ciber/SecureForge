@@ -5,7 +5,7 @@ Herramienta profesional para protección avanzada de archivos y directorios con 
 
 ## 🚀 Características Principales
 
-- **Interfaz Interactiva Ncurses**: Facilita la navegación y configuración.
+cInterfaz Interactiva Ncurses**: Facilita la navegación y configuración.
 - **Cifrado Avanzado**: Soporte para AES-256 Cifrado de protección militar, GPG, y Vernam (One-Time Pad) para máxima seguridad.
 - **Modo Paranoico**: Protección de nivel militar para tus datos más sensibles.
 - **Gestión de Permisos**: Control avanzado con POSIX y ACL.
@@ -24,3 +24,12 @@ cd SecureForge
 
 # Ejecutar:
 sudo ./src/SecureShield.sh [archivo|directorio]
+```
+
+## 📚 Documentación Completa
+Consulta el Manual Técnico para:
+
+- **Configuración avanzada
+- **Opciones de cifrado cuántico
+- **Integración con sistemas de auditoría
+- **Desarrollo de plugins
