@@ -33,3 +33,9 @@ Consulta el Manual Técnico para:
 - **Opciones de cifrado cuántico**
 - **Integración con sistemas de auditoría**
 - **Desarrollo de plugins**
+
+##  Ejemplos de uso
+
+![cap2](https://github.com/user-attachments/assets/64107b99-aec3-4a94-8bc2-491770cbc554)
+
+
