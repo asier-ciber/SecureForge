@@ -18,11 +18,9 @@ Herramienta profesional para protección avanzada de archivos y directorios con 
 ```bash
 sudo apt install dialog openssl gnupg auditd
 
-### Clonar repositorio:
-
-```bash
+# Clonar repositorio:
 git clone https://github.com/tuusuario/SecureForge.git
 cd SecureForge
 
-### Ejecutar:
+# Ejecutar:
 sudo ./src/SecureShield.sh [archivo|directorio]
