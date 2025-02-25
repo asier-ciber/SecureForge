@@ -29,7 +29,7 @@ sudo ./src/SecureShield.sh [archivo|directorio]
 ## 📚 Documentación Completa
 Consulta el Manual Técnico para:
 
-- **Configuración avanzada
-- **Opciones de cifrado cuántico
-- **Integración con sistemas de auditoría
-- **Desarrollo de plugins
+- **Configuración avanzada**
+- **Opciones de cifrado cuántico**
+- **Integración con sistemas de auditoría**
+- **Desarrollo de plugins**
