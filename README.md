@@ -40,11 +40,11 @@ ejecutar:
 sudo bash ./cybershield.sh confidencial.txt      
 
 ```
-## cambiar permisos y dar seguridad
+## ⚒️ cambiar permisos y dar seguridad
 
 ![Captura de pantalla_20250225_204442](https://github.com/user-attachments/assets/d84fdfb6-d93f-4ab7-bd19-d867fa09593f)
 
-## Generar reportes y auditoria de seguridad
+## 🛡️ Generar reportes y auditoria de seguridad
 
 ![Captura de pantalla_20250225_203837](https://github.com/user-attachments/assets/f829f53c-8572-4240-bc57-19b9a2f319e3)
 
