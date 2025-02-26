@@ -3,7 +3,7 @@
 # Autor: Asier Rios
 # Licencia: MIT
 
-# Configuración
+
 VERSION="5.6.0"
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -14,7 +14,7 @@ LOG_FILE="/var/log/cshield.log"
 ORIGINAL_USER=$(logname 2>/dev/null || echo "${SUDO_USER:-$(whoami)}")
 KEY_STORE="${HOME}/.cshield_keys"
 
-# ASCII Art
+
 show_banner() {
     clear
     echo -e "${BLUE}
@@ -27,7 +27,7 @@ show_banner() {
   "
 }
 
-# Funciones básicas
+
 init_environment() {
     mkdir -p "$KEY_STORE"
     touch "$LOG_FILE"
@@ -37,7 +37,7 @@ cleanup() {
     echo "[$(date)] Operación completada en $1" >> "$LOG_FILE"
 }
 
-# Menú interactivo
+
 show_menu() {
     choice=$(dialog --title " CYBER SHIELD FILE DEFENDER " \
            --colors \
@@ -54,7 +54,7 @@ show_menu() {
     echo "$choice"
 }
 
-# Funciones de seguridad mejoradas
+
 paranoid_mode() {
     local target=$1
     (
@@ -99,19 +99,19 @@ secure_wipe() {
     } || dialog --msgbox "Operación cancelada" 5 40
 }
 
-# Cifrado AES-256 (100% funcional)
+
 aes_encrypt() {
     local target=$1
     local encrypted_file="${target}.aes"
 
-    # Solicitar contraseña
+
     while true; do
         password=$(dialog --passwordbox "Ingrese una contraseña (mínimo 12 caracteres):" 8 50 3>&1 1>&2 2>&3)
         [ ${#password} -ge 12 ] && break
         dialog --msgbox "¡La contraseña debe tener al menos 12 caracteres!" 6 50
     done
 
-    # Cifrar archivo
+
     if openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 -in "$target" -out "$encrypted_file" -k "$password"; then
         chmod 600 "$encrypted_file"
         dialog --msgbox "${GREEN}✅ Cifrado completado\n🔒 Archivo cifrado: ${YELLOW}$encrypted_file${NC}" 10 60
@@ -120,7 +120,7 @@ aes_encrypt() {
     fi
 }
 
-# Generar reporte en la ruta del archivo/carpeta
+
 generate_report() {
     local target=$1
     local target_dir
@@ -199,5 +199,5 @@ main() {
     done
 }
 
-# Ejecución
+
 main "$@"
